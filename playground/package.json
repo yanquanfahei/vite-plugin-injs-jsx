@@ -1,0 +1,14 @@
+{
+  "name": "vite-plugin-injs-jsx-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^2.9.5"
+  }
+}
