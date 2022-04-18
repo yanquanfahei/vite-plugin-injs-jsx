@@ -1,6 +1,5 @@
 const fs = require('fs')
 const transformJsx = require('./transformJsx')
-const path = require('path')
 
 /**
  * @type {import(".").VitePluginInJsJsx}
@@ -39,5 +38,6 @@ module.exports = function transformJsxInJs(options = {}) {
 }
 
 function isTransform(include, id) {
+  if(!include.length) return true
   return include.some(item => id.endsWith(item))
 }
