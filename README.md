@@ -23,7 +23,7 @@ export default defineConfig({
 ### `include`
 
 Type: `string []`<br>
-Default: []
+Default: []<br>
 Files that need to be converted to JSX
 
 ### `jsxOptions`

@@ -1,5 +1,15 @@
 const fs = require('fs')
+const { win32, posix } = require('path')
 const transformJsx = require('./transformJsx')
+
+function normalizePath(filename) {
+  return filename.split(win32.sep).join(posix.sep);
+}
+
+function isTransform(include, id) {
+  if(!include.length) return true
+  return include.some(filename => normalizePath(id).indexOf(normalizePath(filename)) >= 0)
+}
 
 /**
  * @type {import(".").VitePluginInJsJsx}
@@ -35,9 +45,4 @@ module.exports = function transformJsxInJs(options = {}) {
       }
     }
   }
-}
-
-function isTransform(include, id) {
-  if(!include.length) return true
-  return include.some(item => id.endsWith(item))
 }

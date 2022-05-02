@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-injs-jsx",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "convert JSX code in JS file, The default is Vue JSX. Parameters can be passed in and configured as react JSX",
   "main": "index.js",
   "repository": {
