@@ -5,7 +5,7 @@ convert JSX code in JS file
 ## Install
 
 ```shell
-npm i vite-plugin-injs-jsx
+npm i vite-plugin-injs-jsx -D
 ```
 
 ## Usage
